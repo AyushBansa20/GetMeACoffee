@@ -49,7 +49,7 @@ const PaymentPage = ({ username }) => {
             "description": "Test Transaction",
             "image": "https://example.com/your_logo",
             "order_id": orderID,
-            "callback_url": `${NEXTAUTH_URL}/api/razorpay`,
+            "callback_url": `${window.location.origin}/api/razorpay`,
             "notes": {
                 "address": "Razorpay Corporate Office"
             },
